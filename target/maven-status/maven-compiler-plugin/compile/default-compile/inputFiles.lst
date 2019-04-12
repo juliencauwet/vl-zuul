@@ -1,0 +1,7 @@
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/security/SecurityConfig.java
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/shuaicj/JwtAuthenticationConfig.java
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/filters/TestFilter.java
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/security/AuthProvider.java
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/shuaicj/JwtTokenAuthenticationFilter.java
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/shuaicj/JwtUsernamePasswordAuthenticationFilter.java
+/Users/julien/IdeaProjects/VoixLibre-All/VoixLibre/VL-zuul/src/main/java/org/greenwin/VLzuul/VlZuulApplication.java
