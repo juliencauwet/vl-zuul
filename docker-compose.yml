@@ -1,6 +1,6 @@
 version: '2'
 services:
-  bibliodb:
+  zuul:
     container_name: zuul
     image: jaycecordon/vlzuul:0.0.1-SNAPSHOT
     ports:
