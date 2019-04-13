@@ -1,4 +1,4 @@
-package org.greenwin.VLzuul.shuaicj;
+package org.greenwin.VLzuul.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
@@ -22,12 +22,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.stream.Collectors;
 
-/**
- * Authenticate the request to url /login by POST with json body '{ username, password }'.
- * If successful, response the client with header 'Authorization: Bearer jwt-token'.
- *
- * @author shuaicj 2017/10/18
- */
+
 public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticationProcessingFilter {
 
     private final JwtAuthenticationConfig config;
@@ -70,3 +65,4 @@ public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticat
         private String username, password;
     }
 }
+

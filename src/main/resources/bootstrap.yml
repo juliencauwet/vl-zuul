@@ -10,4 +10,5 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
+jwt.security.jwt.secret: otherpeopledontknowit
 

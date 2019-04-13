@@ -41,14 +41,15 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- ***************Spring Security***************-->
+		<!-- ***************Spring Security*************** -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-security</artifactId>
 		</dependency>
+
 		<!--
 		<dependency>
-			<groupId>shuaicj.example.security</groupId>
+			<groupId>jwt.example.security</groupId>
 			<artifactId>common</artifactId>
 		</dependency>
 		-->

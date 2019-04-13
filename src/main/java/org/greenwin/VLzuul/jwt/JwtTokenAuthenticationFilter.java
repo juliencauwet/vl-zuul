@@ -1,4 +1,5 @@
-package org.greenwin.VLzuul.shuaicj;
+package org.greenwin.VLzuul.jwt;
+
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -15,11 +16,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Authenticate requests with header 'Authorization: Bearer jwt-token'.
- *
- * @author shuaicj 2017/10/18
- */
+
 public class JwtTokenAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtAuthenticationConfig config;
@@ -54,3 +51,4 @@ public class JwtTokenAuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(req, rsp);
     }
 }
+
