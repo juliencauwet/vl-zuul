@@ -47,13 +47,6 @@
 			<artifactId>spring-cloud-starter-security</artifactId>
 		</dependency>
 
-		<!--
-		<dependency>
-			<groupId>jwt.example.security</groupId>
-			<artifactId>common</artifactId>
-		</dependency>
-		-->
-
 		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
