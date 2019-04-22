@@ -12,7 +12,7 @@
 	<artifactId>VL-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>VL-zuul</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Gateway</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -76,6 +76,10 @@
 		<finalName>vlzuul</finalName>
 		<plugins>
 			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>${dockerfile-maven-version}</version>
@@ -96,10 +100,6 @@
 					</buildArgs>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
 		</plugins>
 	</build>
 
@@ -108,6 +108,9 @@
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 
