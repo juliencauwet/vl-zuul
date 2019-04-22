@@ -3,5 +3,5 @@ MAINTAINER juliencauwet@yahoo.fr
 WORKDIR /app
 VOLUME ["/app"]
 #ARG JAR_FILE
-COPY target/vlzuul.jar target/app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","target/app.jar"]
+COPY target/vlzuul.jar app.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar"]
