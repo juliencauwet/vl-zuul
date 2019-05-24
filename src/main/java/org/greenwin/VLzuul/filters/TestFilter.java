@@ -31,8 +31,7 @@ public class TestFilter extends ZuulFilter {
 
     @Override
     public Object run() throws ZuulException {
-        logger.info("test filter : "+RequestContext.getCurrentContext().getRequest().getRequestURI());
-        logger.info("" + RequestContext.getCurrentContext().getRequest().getQueryString());
+        logger.info("test filter : "+ RequestContext.getCurrentContext().getRequest().getRequestURI());
         return null;
     }
 }

@@ -3,6 +3,8 @@ package org.greenwin.VLzuul.security;
 
 import org.greenwin.VLzuul.jwt.JwtAuthenticationConfig;
 import org.greenwin.VLzuul.jwt.JwtTokenAuthenticationFilter;
+import org.greenwin.VLzuul.passphrase.PassphraseConfiguration;
+import org.greenwin.VLzuul.passphrase.PassphraseFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -19,6 +21,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Autowired
     private JwtAuthenticationConfig config;
+
+    @Autowired
+    private PassphraseConfiguration configuration;
 
     @Bean
     public JwtAuthenticationConfig jwtConfig() {
@@ -40,14 +45,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                     .exceptionHandling().authenticationEntryPoint(
                     (req, rsp, e) -> rsp.sendError(HttpServletResponse.SC_UNAUTHORIZED))
                     .and()
+                    //.addFilter(new PassphraseFilter(configuration))
                     .addFilterAfter(new JwtTokenAuthenticationFilter(config),
                             UsernamePasswordAuthenticationFilter.class)
                     .authorizeRequests()
                     .antMatchers(config.getUrl()).permitAll()
-                    .antMatchers("/ms-topics/**").hasRole("ADMIN")
                     .antMatchers("/backend/admin").hasRole("ADMIN")
                     .antMatchers("/backend/user").hasRole("USER")
-                    .antMatchers("/backend/guest").permitAll();
+                    .antMatchers("/backend/guest").permitAll()
+                    .antMatchers("/ms-topics/**").permitAll();
 
 
         }
