@@ -35,6 +35,7 @@ public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticat
         this.mapper = new ObjectMapper();
     }
 
+
     @Override
     public Authentication attemptAuthentication(HttpServletRequest req, HttpServletResponse rsp)
             throws AuthenticationException, IOException {

@@ -25,6 +25,14 @@ public class JwtTokenAuthenticationFilter extends OncePerRequestFilter {
         this.config = config;
     }
 
+    /**
+     * 1er filtre
+     * @param req
+     * @param rsp
+     * @param filterChain
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse rsp, FilterChain filterChain)
             throws ServletException, IOException {
