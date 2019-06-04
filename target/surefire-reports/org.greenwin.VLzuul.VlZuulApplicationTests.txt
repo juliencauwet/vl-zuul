@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.greenwin.VLzuul.VlZuulApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.2 s - in org.greenwin.VLzuul.VlZuulApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.719 s - in org.greenwin.VLzuul.VlZuulApplicationTests

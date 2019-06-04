@@ -59,7 +59,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                     .antMatchers("/backend/user").hasRole("USER")
                     .antMatchers("/backend/guest").permitAll()
                     .antMatchers("/ms-topics/**").authenticated();
+
+
                     //.antMatchers("/ms-campaign/**").authenticated();
+                    //test
 
 
         }
